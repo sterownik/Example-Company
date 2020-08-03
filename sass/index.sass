@@ -1,0 +1,2035 @@
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+nav 
+    &.top 
+        background-color: #023a5c
+        height: 88px
+        width: 100%
+        z-index: 6
+        position: relative
+        img 
+            position: absolute
+            transform: scale(0.8)
+            right: 20px
+            top: 31px
+            cursor: pointer
+            &:hover 
+                & ~ input 
+                    opacity: 1
+        input 
+            color: white
+            opacity: 0
+            right: 65px
+            top: 29px
+            position: absolute
+            height: 32px
+            width: 177px
+            font-size: 13px
+            background-color: #00183a
+            border: none
+            box-sizing: border-box
+            &.hide 
+                opacity: 1
+        ul 
+            max-width: 998px
+            margin: 0 auto
+            padding-top: 18px
+            height: 70px
+            padding-left: 296px
+            list-style-type: none
+            text-align: center
+            li 
+                float: left
+                line-height: 70px
+                text-align: center
+                margin: 0 19px
+                color: white
+                cursor: pointer
+                font-size: 20px
+                font-family: 'Open Sans', sans-serif
+                &:nth-child(6) 
+                    margin: 0 0 0 35px
+                    padding: 0 0 0 8px
+                &:nth-child(5) 
+                    margin: 0 0 0 29px
+                    padding: 0 0 0 8px
+                &:nth-child(4) 
+                    margin: 0 0 0 26px
+                &:nth-child(3) 
+                    padding: 0 0 0 6px
+                &:nth-child(2) 
+                    padding: 0 0 0 0.5px
+                &:nth-child(1) 
+                    margin: 0 27px 0 0px
+                &:hover 
+                    text-decoration: underline solid white
+    &.left 
+        background-color: white
+        float: left
+        padding-left: 50px
+        width: 210px
+        padding-top: 172px
+        position: fixed
+        transition: 0.3s
+        height: 100vh
+        top: 0
+        z-index: 5
+        li 
+            &:hover 
+                text-decoration: underline solid black
+                cursor: pointer
+        ul 
+            list-style-type: none
+            width: 123px
+            &.left__first 
+                margin-bottom: 17px//TODO 
+            &.left__second 
+                padding-top: 20px
+                border-top: dotted black 2px
+                padding-bottom: 16px
+                li 
+                    padding: 4px 0
+                    &:nth-child(1) 
+                        padding: 0
+                    &:nth-child(5) 
+                        padding: 1px 0
+                    &:nth-child(6) 
+                        padding: 5px 0
+            li 
+                font-size: 20px
+                font-family: 'Open Sans', sans-serif
+            &.left__third 
+                padding-top: 15px
+                border-top: dotted black 2px
+                padding-bottom: 16px
+                border-bottom: dotted black 2px
+                li 
+                    padding: 4px 0
+                    &:nth-child(1) 
+                        padding: 0
+                    &:nth-child(3) 
+                        padding: 3px 0
+                    &:nth-child(5) 
+                        padding: 1px 0
+                    &:nth-child(6) 
+                        padding: 5px 0
+        img 
+            display: block
+            cursor: pointer
+            &:nth-of-type(1) 
+                margin-top: 24px
+            &:nth-of-type(2) 
+                margin-top: 15px
+            &.left__arrow 
+                position: absolute
+                top: 404px
+                left: 82.9%
+                cursor: pointer
+                z-index: 5
+                transition: 0.3s
+            &.rotate 
+                transform: rotate(180deg)
+            
+            &.hide 
+                opacity: 0
+        p 
+            position: absolute
+            top: 58.7%
+            left: 110.1%
+            opacity: 0.9
+            transition: 0.5s
+            &.hide 
+                opacity: 0
+    &.hide 
+        margin-left: -150px
+header 
+    margin: 0 auto
+    position: relative
+    z-index: 103
+    img 
+        &.logo 
+            top: -88px
+            position: absolute
+            background-color: white
+            padding: 17px 39px 2px 24px
+            left: 23%
+section 
+    &.header-slider 
+        height: 1156px
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        position: relative
+        margin-top: -267px
+        transition: 0.2s
+        div 
+            &.header-slider__mainslider 
+                height: 1156px
+                div 
+                    &.slick-list 
+                        height: 890px !important
+                        width: 100% !important
+            &.header-slider__typingdiv 
+                position: absolute
+                width: 1010px
+                margin: 0 auto
+                bottom: 30px
+                left: 50%
+                transform: translateX(-50%)
+                div 
+                    &:nth-child(1) 
+                        margin-top: 6px
+                        height: 57px
+                        width: 858px
+                        background-color: white
+                    &.header-slider__btn 
+                        background-color: white
+                        width: 130px
+                        height: 56px
+                        background-repeat: no-repeat
+                        display: block
+                        position: absolute
+                        top: 6px
+                        right: 5px
+                        text-align: center
+                        color: #043E5E
+                        line-height: 46px
+                        font-size: 20px
+                        border: 2px solid #043E5E
+                        box-sizing: border-box
+                        cursor: pointer
+                input 
+                    position: absolute
+                    right: 16%
+                    top: calc(9% + 12px)
+                    width: 374px
+                    background-color: #ddd
+                    font-size: 22px
+                    height: 35px
+                img 
+                    &:nth-child(3) 
+                        position: absolute
+                        left: 20px
+                        top: calc(9% + 12px)
+                        transform: scale(1.35)
+                        height: 35px
+                p 
+                    position: absolute
+                    line-height: 60px
+                    text-align: center
+                    left: calc(9% + 4px)
+                    font-family: sans-serif
+                    top: 10px
+                    font-size: 20px
+                    color: #023F5B
+        h3 
+            font-family: sans-serif
+            color: white
+            font-weight: 300
+            font-size: 47px
+            position: absolute
+            top: 630px
+            right: calc(33% + 303px) 
+            // psuje u gory
+            z-index: 200
+        p 
+            span 
+                font-family: sans-serif
+                color: white
+                font-weight: 300
+                font-size: 47px
+                &.header-slider__firstspan 
+                    position: absolute
+                    top: 423px
+                    right: calc(10% + 303px) 
+                    // psuje u gory
+                    word-spacing: 7px
+                &.header-slider__secondspan 
+                    position: absolute
+                    font-size: 24px
+                    top: 760px
+                    right: calc(12% + 230px) 
+                    // psuje u gory
+                    word-spacing: 7px
+        .slick-slide 
+            width: 100vw
+            height: 890px
+            position: relative
+            img 
+                object-fit: cover
+                
+div 
+    
+    &.hide 
+        opacity: 0
+article 
+    &.first-artc 
+        background-color: #023F5B
+        width: 100%
+        margin-top: -50px
+        padding-bottom: 31px
+        div 
+            &.first-artc__titleinter 
+                padding-top: 50px
+                width: 220px
+                margin: 50px auto
+                display: flex
+                p 
+                    margin-left: 16px
+                    margin-top: 20px
+                    font-size: 28px
+                    display: block
+                    color: white
+            &.first-artc__rectangle 
+                border-top: dotted white 3px
+                padding-top: 23px
+                // TODO: width wyrzucic
+                // width: 1038px
+                height: 530px
+                display: flex
+                margin: 0 auto
+                padding-right: 40px
+                padding-left: 40px
+                flex-wrap: wrap
+                justify-content: space-around
+                div 
+                    // TODO: flex basis wyrzucic bedzie col
+                    flex-basis: 30%
+                    height: 31%
+                    margin-top: 15px
+                    color: white
+                    background-position: center
+                    background-size: cover
+                    background-color: #4c4c4c
+                    position: relative
+                    &:nth-child(1) 
+                        background-image: url(../img/edukacja.png)
+                    &:nth-child(2) 
+                        background-image: url(../img/transport.png)
+                        background-position: 0px -59px
+                    &:nth-child(3) 
+                        background-image: url(../img/proodukcja.png)
+                    &:nth-child(4) 
+                        background-image: url(../img/architektura.png)
+                        background-position: 0px -50px
+                    &:nth-child(5) 
+                        background-image: url(../img/laboratorium.png)
+                        background-position: top
+                    &:nth-child(6) 
+                        background-image: url(../img/medical-facilities.png)
+                        background-position: 0px -50px
+                    &:hover 
+                        &::before 
+                            display: none
+                    &::before 
+                        flex-basis: 30%
+                        height: 100%
+                        content: ""
+                        background-color: #888
+                        display: block
+                        opacity: 0.9
+                        z-index: 2
+                        position: relative
+                    p 
+                        z-index: 3
+                        position: absolute
+                        top: calc(50% + 11px)
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        text-align: center
+                        margin: auto
+                        width: 100%
+                        font-size: 20px
+                        font-family: sans-serif
+                        text-transform: uppercase
+                        color: white
+                    
+            &.first-artc__desc-rect 
+                padding-top: 32px
+                
+                display: flex
+                margin: 0 auto
+                padding-right: 40px
+                padding-left: 40px
+                justify-content: space-around
+                div 
+                    flex-basis: 30%
+                    color: white
+                    text-align: justify
+                    p 
+                        font-size: 16px
+                        font-family: sans-serif
+    &.second-artc 
+        padding-bottom: -20px
+        background-color: white
+        margin: 0 auto
+        width: 100%
+        div 
+            &.second-artc__title 
+                display: flex
+                margin: 0 auto
+                padding-top: 39px
+                width: 230px
+                justify-content: space-between
+                -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #023F5B)
+                filter: opacity(0.5) drop-shadow(0 0 0 #023F5B)
+                h2 
+                    text-align: center
+                    font-size: 28px
+                    font-family: sans-serif
+                    text-transform: uppercase
+                    font-weight: 300
+                    line-height: 46px
+            &.second-artc__descsecondart 
+                border-top: #023F5B dotted 3px
+                // width: 1000px
+                // height: 150px
+                margin: 62px auto
+                padding-top: 62px
+                padding-left: 56px
+                padding-right: 56px
+                display: flex
+                justify-content: space-between
+                div 
+                    flex-basis: 49%
+                    font-size: 21px
+                    text-align: justify
+                    color: #023F5B
+                    font-family: sans-serif
+            &.second-artc__circles 
+                // width: 1000px
+                height: 400px
+                margin: 42px auto
+                display: flex
+                padding-left: 56px
+                padding-right: 56px
+                flex-wrap: wrap
+                justify-content: space-between
+                padding-bottom: 25px
+                div 
+                    background-color: #023F5B
+                    width: 16.8%
+                    margin-top: 20px
+                    border-radius: 50%
+                    position: relative
+                    p 
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        display: block
+                        padding: 0
+                        text-align: center
+                        color: white
+                        font-size: 21px
+                        font-family: sans-serif
+    &.art-service 
+        background-color: #023F5B
+        margin-top: 125px
+        width: 100%
+        padding-bottom: 42px
+        div 
+            &.art-service__contentservice 
+                div 
+                    
+
+                    &.art-service__title 
+                        display: flex
+                        margin: 0 auto
+                        padding-top: 39px
+                        width: 205px
+                        justify-content: space-between
+                        -webkit-filter: opacity(1) drop-shadow(0 0 0 #023F5B)
+                        filter: opacity(1) drop-shadow(0 0 0 #023F5B)
+                        p 
+                            text-align: center
+                            font-size: 25px
+                            font-family: sans-serif
+                            text-transform: uppercase
+                            font-weight: 300
+                            line-height: 66px
+                            color: white
+                    &.art-service__iconservice 
+                        border-top: white dotted 3px
+                        // width: 1000px
+                        height: 400px
+                        margin: 32px auto 40px auto
+                        padding-right: 45px
+                        padding-left: 45px
+                        display: flex
+                        justify-content: space-around
+                        div 
+                            &.art-service__firstcol 
+                                div 
+                                    p 
+                                        &:nth-of-type(1) 
+                                            top: calc(75% - 10px)
+                                            left: calc(50% + 49px)
+                                    img 
+                                        &:nth-of-type(1) 
+                                            top: calc(50% - 14px)
+                                            left: calc(50% + 39px)
+                                    &:nth-of-type(2) 
+                                        p 
+                                            &:nth-of-type(1) 
+                                                top: calc(75% + 26px)
+                                                left: calc(50% + 49px)
+                                        img 
+                                            &:nth-of-type(1) 
+                                                top: calc(50% - 3px)
+                                                left: calc(50% + 39px)
+                            &.art-service__secondcol 
+                                div 
+                                    &.poj 
+                                        flex-basis: 100%
+                                        position: relative
+                                        p 
+                                            position: absolute
+                                            top: calc(63% - 19px)
+                                            left: 50%
+                                            text-align: center
+                                        img 
+                                            position: absolute
+                                            top: calc(63% - 75px)
+                                            left: 50%
+                                            text-align: center
+                            &.art-service__thirdcol 
+                                div 
+                                    p 
+                                        &:nth-of-type(1) 
+                                            top: calc(75% - 10px)
+                                            left: calc(50% - 25px)
+                                    img 
+                                        &:nth-of-type(1) 
+                                            top: calc(50% - 4px)
+                                            left: calc(50% - 33px)
+                                    &:nth-of-type(2) 
+                                        p 
+                                            &:nth-of-type(1) 
+                                                top: calc(75% + 15px)
+                                                left: calc(50% - 13px)
+                                        img 
+                                            &:nth-of-type(1) 
+                                                top: calc(50% + 13px)
+                                                left: calc(50% - 20px)
+                    &.art-service__service-desc 
+                        margin: 80px auto 0 auto
+                        display: flex
+                        padding-right: 40px
+                        padding-left: 40px
+                        // width: 1000px
+                        justify-content: space-between
+                        div 
+                            flex-basis: 49%
+                            p 
+                                text-align: justify
+                                color: white
+                                font-size: 19px
+                                font-weight: 300
+                                font-family: sans-serif
+    &.news-feed 
+        height: 890px
+        // width: 950px
+        margin: 55px auto 55px auto
+        padding-bottom: 247px
+        div 
+            &.news-feed__title 
+                display: flex
+                margin: 0 auto 17px auto
+                width: 345px
+                justify-content: space-around
+                p 
+                    line-height: 74px
+                    text-align: center
+                    font-size: 30px
+                    text-transform: uppercase
+                    font-family: sans-serif
+            &.news-feed__profile 
+                width: 80%
+                border-top: dotted 3px #023F5B
+                margin: 0 auto
+                padding-top: 113px
+                div 
+                    &.news-feed__columnsfeed 
+                        div 
+                            &.news-feed__ikony 
+                                margin-top: -33px
+                                width: 100%
+                                height: 400px
+                                & > div 
+                                    height: 500px
+                                div 
+                                    
+                                    &.news-feed__poj 
+                                        div 
+                                            &.op 
+                                                position: absolute
+                                                left: 7px
+                                                top: 266px
+                                                p.hidedesc
+                                                    // display: none TODO: tutaj dla rozdzielczosci 768
+                                                p 
+                                                    width: 100%
+                                                    text-align: justify
+                                                    font-size: 14px
+                                                    margin-bottom: 10px
+                                                    color: #023F5B
+                                                    &:nth-child(4) 
+                                                        margin-top: 15px
+                                                        border-top: dotted #023F5B 2px
+                                                        padding-top: 15px
+                                                        width: 50px
+    &.contact-artc 
+        padding-bottom: 14px
+        width: 100%
+        background-color: #023F5B
+        div 
+            &.contact-artc__contentcontact 
+                div 
+                    &.contact-artc__under420
+                        display: none
+                    &.contact-artc__title 
+                        display: flex
+                        margin: 0 auto
+                        padding-top: 12px
+                        width: 215px
+                        justify-content: space-between
+                        p 
+                            line-height: 71px
+                            text-align: center
+                            color: white
+                            font-family: sans-serif
+                            font-size: 31px
+                            padding-left: 9px
+                    &.contact-artc__citiescontact 
+                        height: auto
+                        border-top: dotted 2px white
+                        border-bottom: dotted 2px white
+                        // width: 840px
+                        margin: 50px auto 16px auto
+                        display: block
+                        padding-right: 129px
+                        padding-left: 129px
+                        // padding-bottom: 80px
+                        padding-top: 50px
+                        div 
+                            &.slick-slide 
+                                width: 100%
+                                height: 237px
+                                position: relative
+                                &.contact-artc__two
+                                    p
+                                        padding-left: 20px
+                                &.contact-artc__one
+                                &.contact-artc__three
+                                    p
+                                        padding-left: 50px
+                                p
+                                    font-size: 16px
+                                    color: white
+                                    font-family: sans-serif
+                                    font-weight: 300
+
+                            
+                    &.contact-artc__contactmedia 
+                        margin: 14px auto 39px auto
+                        display: flex
+                        // width: 840px
+                        padding-right: 129px
+                        padding-left: 129px
+                        height: 390px
+                        justify-content: space-between
+                        div 
+                            &.contact-artc__asksmedia 
+                                height: 100%
+                                flex-basis: 50%
+                                display: flex
+                                flex-direction: column
+                                justify-content: space-around
+                                position: relative
+                                div 
+                                    flex-basis: 19px
+                                    display: block
+                                    position: relative
+                                    &:nth-last-child(1) 
+                                        flex-basis: 53px
+                                        display: block
+                                    p 
+                                        position: absolute
+                                        top: -10px
+                                        right: 2px
+                                        color: white
+                                        font-size: 16px
+                                        font-family: sans-serif
+                                        font-weight: 300
+                                        text-transform: uppercase
+                                    &.prez 
+                                        position: relative
+                                        input 
+                                            &.checkfirst 
+                                                position: absolute
+                                                bottom: 0
+                                                left: 0
+                                                width: 23px
+                                                height: 23px
+                                            &.checksecond 
+                                                position: absolute
+                                                bottom: 0
+                                                left: 135px
+                                                width: 23px
+                                                height: 23px
+                                                border: none
+                                        span 
+                                            &.checkmarkfirst 
+                                                position: absolute
+                                                bottom: -3px
+                                                left: 37px
+                                                font-size: 17px
+                                                font-family: sans-serif
+                                                color: white
+                                            &.checkmarksecond 
+                                                position: absolute
+                                                bottom: -3px
+                                                left: 170px
+                                                font-family: sans-serif
+                                                font-size: 17px
+                                                color: white
+                                        p 
+                                            &.title 
+                                                position: absolute
+                                                top: -3px
+                                                left: 3px
+                                                font-family: sans-serif
+                                                font-size: 17px
+                                                text-transform: none
+                                        div 
+                                            &.btn 
+                                                position: absolute
+                                                height: 100%
+                                                width: 117px
+                                                right: 4px
+                                                top: 0
+                                                background-color: white
+                                                text-align: center
+                                                line-height: 53px
+                                                color: #ddd
+                                input 
+                                    flex-basis: 34px
+                                    display: block
+                                    border: none
+                                    position: relative
+                                    &:nth-of-type(5) 
+                                        flex-basis: 84px
+                                        display: block
+                                        position: relative
+                            &.contact-artc__media 
+                                height: 100%
+                                flex-basis: 19%
+                                display: flex
+                                height: 380px
+                                flex-direction: column
+                                justify-content: space-between
+                                position: relative
+                                margin-left: 3px
+                                img 
+                                    object-fit: contain
+                                    margin: 0 auto
+                                    &:nth-of-type(3) 
+                                        margin: 0 auto
+                                p 
+                                    &.title 
+                                        text-align: center
+                                        font-size: 16px
+                                        text-transform: uppercase
+                                        font-family: sans-serif
+                                        margin-left: 3px
+                                        margin-right: -6px
+                                        margin-top: -3px
+                                        display: block
+                                        color: white
+                            &.contact-artc__work 
+                                height: 100%
+                                flex-basis: 28%
+                                position: relative
+                                p 
+                                    color: white
+                                    font-family: sans-serif
+                                    position: absolute
+                                    text-align: left
+                                    font-size: 16px
+                                    &:nth-of-type(1) 
+                                        text-transform: uppercase
+                                        top: -3px
+                                    &:nth-of-type(2) 
+                                        top: 40px
+                                        left: 6px
+                                        font-weight: 200
+                                    &:nth-of-type(3) 
+                                        top: 160px
+                                        left: 7px
+                                    &:nth-of-type(4) 
+                                        top: 261px
+                                        left: 7px
+                                    span
+                                        &.contact-artc__under768
+                                            display: inline
+                                            &.contact-artc__up768
+                                                display: none
+                                    &.contact-artc__up768
+                                        display: none
+                footer 
+                    &.contact-artc__firstfooter 
+                        border-top: dotted white 2px
+                        // width: 840px
+                        margin: 0 auto
+                        cursor: pointer
+                        p 
+                            line-height: 25px
+                            padding-top: 10px
+                            text-align: center
+                            font-family: sans-serif
+                            font-size: 16px
+                            color: white
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__firstcol,
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__secondcol,
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__thirdcol 
+    flex-basis: 32%
+    height: 400px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__firstcol div,
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__secondcol div,
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__thirdcol div 
+    flex-basis: 50%
+    position: relative
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__firstcol div img,
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__secondcol div img,
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__thirdcol div img 
+    object-fit: contain
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    filter: grayscale(60%)
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__firstcol div p,
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__secondcol div p,
+article.art-service div.art-service__contentservice div.art-service__iconservice div.art-service__thirdcol div p 
+    position: absolute
+    top: 75%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    font-size: 17px
+    font-weight: 300
+    width: 100%
+    text-transform: uppercase
+    font-family: sans-serif
+    color: white
+article.news-feed div.news-feed__profile div.news-feed__columnsfeed div.prawo,
+article.news-feed div.news-feed__profile div.news-feed__columnsfeed div.lewo 
+    flex-basis: 4%
+    position: relative
+article.news-feed div.news-feed__profile div.news-feed__columnsfeed div.prawo img,
+article.news-feed div.news-feed__profile div.news-feed__columnsfeed div.lewo img 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    cursor: pointer
+article 
+    &.news-feed
+        div
+            &.news-feed__profile
+                div
+                    &.news-feed__columnsfeed
+                        div
+                            &.news-feed__ikony
+                                div
+                                    &.news-feed__poj
+                                        width: 250px
+                                        height: 500px
+                                        position: relative
+                                        z-index: 2
+                                        img
+                                            width: 180px
+                                            height: 180px
+                                            position: absolute
+                                            top: 10%
+                                            left: 50%
+                                            transform: translateX(-50%)
+                                            border-radius: 50%
+    @keyframes scrolll 
+        100% 
+            transform: translateX(220px)
+@keyframes przewin2 
+    100% 
+        transform: translateX(225px) 
+input.firstname::placeholder,
+input.email::placeholder,
+input.telephone::placeholder,
+input.subject::placeholder,
+input.matter::placeholder 
+    font-size: 17px
+    color: #ddd
+input 
+    &.firstname 
+        &::placeholder 
+            padding-left: 289px
+            padding-top: 19px
+    &.email 
+        &::placeholder 
+            padding-left: 363px
+            padding-top: 19px
+    &.telephone 
+        &::placeholder 
+            padding-left: 287px
+            padding-top: 19px
+    &.subject 
+        &::placeholder 
+            padding-left: 361px
+            margin-top: 22px
+    &.matter 
+        &::placeholder 
+            padding-left: 289px
+            padding-top: -19px
+            margin-top: 20px
+            display: block
+.placeholdermatter 
+    position: absolute
+    right: -9px
+    top: 234px
+    background-color: transparent
+    padding: 0 20px
+    font-size: 17px
+    font-family: sans-serif
+    color: #ddd
+footer 
+    &.mainfooter 
+        height: 137px
+        // width: 920px
+        margin: 0 auto
+        padding-left: 93px
+        padding-right: 93px
+        div 
+            &.mainfooter__contain 
+                div 
+                    &.mainfooter__adsfooter 
+                        padding-top: 0px
+                        margin-top: 0px
+                        position: relative
+                        transition: 0.3s
+                img 
+                    height: auto
+                    width: auto
+                    margin: 0 auto
+.slick-slide 
+    width: 100%
+    height: 137px
+    position: relative
+    img 
+        display: block
+        width: auto
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+@media screen and ( max-width: 1720px )
+    header 
+        img
+            &.logo
+                left: 15%
+@media screen and ( max-width: 1420px )
+    header 
+        img
+            &.logo
+                left: 15%
+
+@media screen and ( max-width: 1024px )
+    img
+        &.header-slider__firstslidei
+            display: none
+    header 
+        img
+            &.logo
+                left: -40px
+                object-fit: cover;
+                padding: 21px 11px 9px 5px
+                transform: scale(0.65)
+                top: -134px
+
+    nav
+        &.top 
+            height: 93px
+            padding: 0
+            margin: 0
+            width: 100%
+            img 
+                display: none
+            ul 
+                height: 100%
+                margin: 0 auto
+                width: 90%
+                padding: 0 0 0 150px
+                li 
+                    line-height: 93px
+                    font-size: 17px
+                    
+                    &:nth-child(6) 
+                        margin: 0 0 0 5px
+                        padding: 0 0 0 8px
+                    &:nth-child(5) 
+                        margin: 0 0 0 9px
+                        padding: 0 0 0 8px
+                    &:nth-child(4) 
+                        margin: 0 0 0 6px
+                    &:nth-child(3) 
+                        padding: 0 0 0 6px
+                    &:nth-child(2) 
+                        padding: 0 0 0 0.5px
+                    &:nth-child(1) 
+                        margin: 0 7px 0 0px
+                    &:hover 
+        &.left 
+            
+            padding-left: 10px
+            width: 130px
+            padding-top: 112px
+            position: fixed
+            transition: 0.3s
+            margin-left: 0
+            left: 0px
+            top: 0
+            ul 
+                width: 113px
+                &.left__first 
+                    margin-bottom: 7px//TODO 
+                    border-bottom: 2px dotted black
+                    width: 45px
+                    padding-bottom: 2px
+                &.left__second 
+                    padding-top: 6px
+                    border-top: none
+                    padding-bottom: 6px
+                    margin-bottom: 6px
+                    &::after
+                        content: " "
+                        margin-top: 17px
+                        display: block
+                        width: 45px
+                        border-bottom: 2px dotted black
+
+                li 
+                    font-size: 17px
+                    font-family: 'Open Sans', sans-serif
+                
+                &.left__third 
+                    padding-top: 5px
+                    border-top: none
+                    padding-bottom: 16px
+                    border-bottom: none
+                    &::after
+                        content: " "
+                        margin-top: 17px
+                        display: block
+                        width: 45px
+                        border-bottom: 2px dotted black
+                    
+            img 
+                
+                &:nth-of-type(1) 
+                    margin-top: 17px
+                    position: absolute
+                    left: 80px
+                &:nth-of-type(2) 
+                    margin-top: 15px
+                    position: absolute
+                    
+                &.left__arrow 
+                    transform: scale(0.7)
+                    top: 324px
+                    left: 85%
+                   
+                &.rotate 
+                    transform: rotate(180deg) scale(0.7)
+                    // left: 85%
+                    left: 88%
+        &.hide 
+            margin-left: -115px
+    section 
+        &.header-slider
+            height: 895px
+            .slick-slide 
+                width: 100vw
+                height: 445px
+                
+                position: relative
+                img 
+                    display: block
+                    width: auto
+                    position: absolute
+                    height: 845px
+                    width: 100%
+                    object-fit: cover
+            
+            div 
+                &.header-slider__mainslider 
+                    height: 845px
+                    ul
+                        &.slick-dots
+                            display: none !important
+                    div 
+                        &.slick-list 
+                            height: 845px !important
+                            width: 100% !important
+                &.header-slider__typingdiv 
+                   
+                    width: 550px
+                    margin: 0 auto
+                    bottom: 50px
+                    left: 57%
+                    div
+                        &:nth-child(1) 
+                            margin-top: 6px
+                            height: 42px
+                            width: 408px
+                        &.header-slider__btn 
+                            width: 130px
+                            height: 42px
+                            
+                            top: 6px
+                            right: 5px
+                            
+                            line-height: 36px
+                            font-size: 17px
+                            
+                    input 
+                        
+                        left: 160px
+                        top: calc(9% + 6px)
+                        width: 240px
+                        font-size: 22px
+                        height: 35px
+                    img 
+                        &:nth-child(3)
+                            left: 10px
+                            top: calc(9% + 6px)
+                            transform: scale(1)
+                            height: 35px
+                            
+                    p 
+                        line-height: 42px
+                        text-align: center
+                        left: calc(9% + 14px)
+                        top: 10px
+                        font-size: 15px
+
+            h3 
+                font-family: sans-serif
+                color: white
+                font-weight: 300
+                font-size: 37px
+                position: absolute
+                top: 605px
+                left: 35%
+                // psuje u gory
+
+            p 
+                span 
+                    font-family: sans-serif
+                    color: white
+                    font-weight: 300
+                    font-size: 27px
+                    &.header-slider__firstspan 
+                        position: absolute
+                        top: 400px
+                        left: 35%
+                        // psuje u gory
+                        width: 400px
+                        word-spacing: 7px
+                    &.header-slider__secondspan 
+                        position: absolute
+                        display: none
+                        font-size: 19px
+                        top: 350px
+                        right: 12%
+                        // psuje u gory
+                        word-spacing: 7px
+        
+    article 
+        &.first-artc
+            padding-bottom: 100px
+            div
+                &.first-artc__titleinter
+                    padding-top: 50px
+                    margin: 40px auto 25px auto
+                &.first-artc__rectangle
+                    height: 300px
+                    div
+                        &:nth-of-type(2) 
+                            background-position: 0px -45px
+                        p
+                            font-size: 16px
+                        
+
+                &.first-artc__desc-rect
+                    display: none
+    
+        &.second-artc 
+       
+            div 
+                &.second-artc__descsecondart
+                    display: none
+            
+                &.second-artc__circles
+                    border-top: 2px dotted #023F5B
+                    height: 320px
+                    margin: 30px auto
+                    padding-top: 60px
+                    padding-bottom: 20px
+                    div 
+                        p 
+                            font-size: 11px
+        &.art-service 
+            margin-top: 75px
+            padding-bottom: 0
+            
+            div 
+                &.art-service__contentservice 
+                    div 
+                        &.art-service__title 
+                            padding-top: 20px
+                            
+                            img
+                                transform: scale(0.7)
+                            p 
+                                font-size: 24px
+                            
+                        &.art-service__iconservice 
+                            border-top: none
+                            height: auto
+                            margin: 3px auto 10px auto
+                           
+                            padding-bottom: 10px
+                            &::before
+                                content: " "
+                                margin: 17px auto 0 auto
+                                display: block
+                                width: 84%
+                                border-top: 2px dotted black
+                                position: absolute
+                            div 
+                                &.art-service__firstcol 
+                                    height: auto
+                                    div 
+                                        p 
+                                            &:nth-of-type(1) 
+                                                font-size: 11px
+                                                top: calc(50% - 14px)
+                                                left: calc(50% + 89px)
+                                        img 
+                                            &:nth-of-type(1) 
+                                                top: calc(35% - 14px)
+                                                transform: scale(0.7)
+                                                left: 40px
+                                        &:nth-of-type(2) 
+                                            p 
+                                                &:nth-of-type(1) 
+                                                    text-align: left
+                                                    width: 300px
+                                                    font-size: 11px
+                                                    top: calc(50% - 4px)
+                                                    left: calc(50% + 169px)
+                                            img 
+                                                &:nth-of-type(1) 
+                                                    top: calc(35% - 14px)
+                                                    transform: scale(0.7)
+                                                    left: 40px
+                                &.art-service__secondcol 
+                                    div 
+                                        &.poj 
+                                            flex-basis: 100%
+                                            position: relative
+                                            p 
+                                                position: absolute
+                                                top: calc(63% - 75px)
+                                                font-size: 11px
+                                                left: calc(50% + 60px)
+                                                text-align: center
+                                            img 
+                                                position: absolute
+                                                top: calc(63% - 100px)
+                                                transform: scale(0.7)
+                                                left: 10%
+                                                text-align: center
+                                &.art-service__thirdcol 
+                                    height: auto
+                                    div 
+                                        p 
+                                            &:nth-of-type(1) 
+                                                text-align: left
+                                                font-size: 11px
+                                                top: calc(50% - 14px)
+                                                left: calc(50% - 1px)
+                                        img 
+                                            &:nth-of-type(1) 
+                                                top: calc(35% - 9px)
+                                                transform: scale(0.7)
+                                                left: -100px
+                                        &:nth-of-type(2) 
+                                            p 
+                                                &:nth-of-type(1) 
+                                                    text-align: left
+                                                    font-size: 11px
+                                                    width: 100px
+                                                    top: calc(35% + 24px)
+                                                    left: calc(50% - 15px)
+                                            img 
+                                                &:nth-of-type(1) 
+                                                    top: calc(35% + 4px)
+                                                    transform: scale(0.7)
+                                                    left: -50px
+        &.news-feed 
+            // height: 890px
+            height: auto
+            // width: 2950px
+            margin: 55px auto 55px auto
+            padding-bottom: 47px
+            div 
+                &.news-feed__title 
+                    display: flex
+                    margin: 0 auto 47px auto
+                    width: 345px
+                    justify-content: space-around
+                    img
+                        transform: scale(0.7)
+                    p 
+                        line-height: 67px
+                        text-align: center
+                        font-size: 30px
+                        text-transform: uppercase
+                        font-family: sans-serif
+                &.news-feed__profile 
+                    width: 100%
+                    border-top: dotted 3px #023F5B
+                    padding-top: 113px
+                    div 
+                        &.news-feed__columnsfeed 
+                            div 
+                                &.news-feed__ikony 
+                                    margin-top: -33px
+                                    width: 100%
+                                    height: 300px
+                                    & > div 
+                                        height: 300px
+                                    &.slick-next
+                                        right: 76% !important
+                                    div 
+                                        &.news-feed__poj
+                                            height: 300px
+                                       
+                                        &.news-feed__poj
+                                            img
+                                                height: 122px
+                                            div 
+                                                &.op 
+                                                    position: absolute
+                                                    left: 7px
+                                                    top: 190px
+                                                    p.hidedesc
+                                                        display: none 
+                                                    p 
+                                                        width: 100%
+                                                        text-align: justify
+                                                        font-size: 14px
+                                                        margin-bottom: 10px
+                                                        color: #023F5B
+                                                        &:nth-child(4) 
+                                                            margin-top: 15px
+                                                            border-top: dotted #023F5B 2px
+                                                            padding-top: 15px
+                                                            width: 50px
+        &.contact-artc 
+            
+            div 
+                &.contact-artc__contentcontact 
+                    div 
+                        
+                        &.contact-artc__title 
+                            width: 150px
+                            img
+                                transform: scale(0.7)
+                            
+                            p 
+                                font-size: 18px
+                                display: block
+                                color: white
+                        &.contact-artc__citiescontact 
+                            padding-top: 10px
+                            margin-bottom: 10px
+                            padding-right: 67px
+                            padding-left: 79px
+                            margin-top: 20px
+                            border-top: none
+                            border-bottom: none
+                            div
+                                &.slick-slide
+                                    height: 160px
+                                    &.contact-artc__three
+                                        p
+                                            padding-left: 20px
+                                    p
+                                        font-size: 12px
+                            &::before
+                                border-top: dotted white 2px
+                                top: -20px
+                                position: absolute
+                                left: 50%
+                                transform: translateX(-50%)
+                                width: 80%
+                                content: " "
+                                display: block
+                                margin-bottom: 10px
+                                padding-bottom: 20px
+                            &::after
+                                border-bottom: dotted white 2px
+                                bottom: -20px
+                                position: absolute
+                                left: 50%
+                                transform: translateX(-50%)
+                                width: 80%
+                                content: " "
+                                display: block
+                                margin-top: 5px
+                                padding-top: 10px
+                            div
+                                p
+                                    font-size: 12px
+                                &:nth-child(3)
+                                    flex-basis: 30%
+                                    
+                        &.contact-artc__contactmedia 
+                            margin: 40px auto 20px auto
+                            
+                            height: auto
+                            padding-bottom: 62px
+                            
+                            div 
+                                &.contact-artc__asksmedia 
+                                    height: auto
+                                    div 
+                                        
+                                        &:nth-last-child(1) 
+                                            
+                                        p 
+                                            top: 0px
+                                            left: -48.0%
+                                            color: white
+                                            font-size: 12px
+                                            font-family: sans-serif
+                                            font-weight: 300
+                                            text-transform: uppercase
+                                            &::after
+                                                content: "simple@simple.com.pl"
+                                                margin-top: 17px
+                                                display: block
+                                                width: 45px
+                                &.contact-artc__work 
+                                    height: auto
+                                    flex-basis: 78%
+                                    position: relative
+                                    left: -6.7%
+                                    font-weight: 300
+
+                                    p 
+                                        
+                                        font-weight: 300
+                                        font-size: 12px
+                                        &:nth-of-type(2) 
+                                            top: 25px
+                                            left: 0px
+                                            
+                                        &:nth-of-type(3) 
+                                            
+                                            left: 0px
+                                        span
+                                            &.contact-artc__under768
+                                                display: inline
+                                            &.contact-artc__up768
+                                                display: none
+                                        &.contact-artc__up768
+                                            display: none
+                                        
+                                                
+    footer 
+        &.mainfooter 
+            height: 137px
+            // width: 920px
+            margin: 0 auto
+            div 
+                &.mainfooter__contain 
+                    div 
+                        &.mainfooter__adsfooter 
+                            padding-top: 20px
+                            margin-top: 10px
+                            position: relative
+                            transition: 0.3s
+                    img 
+                        transform: scale(0.6)
+                        &.vision
+                            left: -37%
+                            top: 30%
+                        &.bell
+                            left: 17%
+                            top: 15%
+                        &.ernst
+                            left: -23%
+                            top: 15%
+                        &.minis
+                            top: 10%
+                            left: 10%
+                        &.tnt
+                            left: 14%
+                            top: 15%
+@media screen and ( max-width: 650px )
+    .slick-slide 
+        height: 237px
+        
+    header 
+        img
+            &.logo
+                left: 50%
+                object-fit: cover
+                padding: 21px 11px 9px 5px
+                transform: translateX(-50%) scale(0.65)
+                top: -80px
+
+
+    nav
+        &.top 
+            height: 47px
+            
+            img 
+                display: none
+            ul 
+                display: none
+        &.left
+            
+            width: 105px
+            padding-top: 82px
+            position: absolute
+            height: 522px
+            top: 0
+            ul 
+                width: 113px
+                &.left__first 
+                    margin-bottom: 3px//TODO 
+                    border-bottom: 1px dotted black
+                    width: 45px
+                    padding-bottom: 1px
+                &.left__second 
+                    padding-top: 3px
+                    border-top: none
+                    padding-bottom: 2px
+                    margin-bottom: 2px
+                    
+                        
+
+                li 
+                    font-size: 13px
+                
+                &.left__third 
+                    padding-top: 5px
+                    border-top: none
+                    padding-bottom: 2px
+                    border-bottom: none
+                    &::after
+                        margin-top: 3px
+                    
+                    
+            img 
+                
+                &:nth-of-type(1) 
+                    
+                    margin-top: -5px
+                    
+                &:nth-of-type(2) 
+                    margin-top: -8px
+                    
+                    
+                &.left__arrow 
+                    top: 259px
+                    left: 85%
+                   
+                &.rotate 
+                    left: 85%
+        &.hide 
+            margin-left: -90px
+    section 
+        &.header-slider
+            margin-top: 0
+            height: 445px
+            .slick-slide 
+                height: 445px
+                
+                img 
+                    
+                    height: 505px
+                    object-fit: cover
+                    
+            
+            div 
+                &.header-slider__mainslider 
+                    height: 505px
+                    ul
+                        &.slick-dots
+                            display: block !important
+                    div 
+                        &.slick-list 
+                            height: 505px !important
+                &.header-slider__typingdiv 
+                    width: 85vw
+                    bottom: 25px
+                    left: 55.2%
+                    div
+                        &:nth-child(1) 
+                            margin-top: 6px
+                            height: 30px
+                            width: 71%
+                        &.header-slider__btn 
+                            width: 27%
+                            height: 30px
+                            top: 6px
+                            right: 0
+                            
+                            line-height: 24px
+                            font-size: 11.2px
+                            
+                    input 
+                        left: 40px
+                        top: calc(9% + 6px)
+                        width: 56%
+                        font-size: 22px
+                        height: 23px
+                    img 
+                        &:nth-child(3)
+                            left: 0px
+                            top: calc(9% + 1px)
+                            transform: scale(0.7)
+                            height: 35px
+                            
+                    p 
+                        
+                        display: none
+
+            h3 
+                display: none
+
+            p
+                display: none
+    article
+        &.first-artc
+            padding-bottom: 40px
+            div
+                &.first-artc__titleinter
+                    position: relative
+                    padding-top: 50px
+                    margin: 40px auto 15px auto
+                    img
+                        transform: scale(0.7)
+                    &::after
+                        content: " "
+                        display: block
+                        position: absolute
+                        width: 148%
+                        border-bottom: dotted white 2px
+                        top: 115%
+                        left: 51%
+                        transform: translateX(-50%)
+                    p
+                        margin-left: 5px
+                        
+                &.first-artc__rectangle
+                    height: 400px
+                    padding-top: 0
+                    border-top: none
+                    div
+                        &:nth-of-type(2) 
+                            background-position: 0px 2px
+                        &:nth-of-type(4) 
+                            background-position: 0px -2px
+                        &:nth-of-type(6) 
+                            background-position: 0px -2px
+                        &:nth-of-type(9) 
+                            p
+                                font-size: 9px
+                        p
+                            font-size: 10px
+        &.second-artc
+            div
+                &.second-artc__title
+                    h2
+                        position: absolute
+                        font-size: 18px
+                        top: 50%
+                        left: 60%
+                        transform: translate(-50%)
+                    img
+                        top: 50%
+                        left: 25%
+                        transform: scale(0.5) translate(-50%)
+                        position: absolute
+                
+                &.second-artc__circles
+                    display: block
+                    padding-top: 10px
+                    height: auto
+                    padding-bottom: 0
+                    div
+                        width: 100%
+                        margin-top: 13px
+                        margin-bottom: 13px
+                        padding: 15px
+                        height: 20px
+                        border-radius: 0%
+                        background-color: transparent
+                        
+                            
+                        p
+                            color: #023F5B
+                            font-size: 18px
+                            width: 100%
+                            br
+                                display: none
+                        &:nth-of-type(5)
+                            p
+                                margin-top: 15px
+                                margin-bottom: 15px
+                                padding: 15px
+                                
+                                br
+                                    &:nth-of-type(2)
+                                        display: block
+                        &:nth-of-type(6)
+                            margin-top: 25px
+                            margin-bottom: 15px
+                            
+                            p
+                                margin-top: 15px
+                                margin-bottom: 15px
+                                padding: 15px
+                                
+                                br
+                                    &:nth-of-type(2)
+                                        display: block
+        &.art-service
+            margin-top: 5px
+            div
+                &.art-service__contentservice
+                    div
+                        
+                        &.art-service__iconservice
+                            display: block
+                            div
+                                margin: 0 auto
+                                height: 200px
+                                
+                                &.art-service__firstcol
+                                    height: 200px
+                                    padding-top: 30px
+                                    
+                                    div
+                                        &:nth-of-type(1)
+                                            width: 200px
+                                            img
+                                                top: 30px
+                                                left: 50%
+                                                transform: translateX(-50%) scale(0.5)
+                                            p
+                                                top: 80px
+                                                text-transform: uppercase
+                                                left: 50%
+                                                transform: translateX(-50%)
+                                        &:nth-of-type(2)
+                                            width: 200px
+                                            img
+                                                &:nth-of-type(1)
+                                                    top: 10px
+                                                    left: 50%
+                                                    transform: translateX(-50%) scale(0.5)
+                                                    
+                                                
+                                            p
+                                                &:nth-of-type(1)
+                                                    text-align: center
+                                                    text-transform: uppercase
+                                                    top: 80px
+                                                    left: 50%
+                                                    transform: translateX(-50%)
+
+                                &.art-service__secondcol
+                                    height: 100px
+                                    width: 200px
+                                    div
+                                        &.poj
+                                            width: 200px
+                                            img
+                                                top: 40px
+                                                left: 50%
+                                                transform: translateX(-50%) scale(0.5)
+                                            p
+                                                top: 90px
+                                                text-transform: uppercase
+                                                left: 50%
+                                                transform: translateX(-50%)
+                                        
+                                &.art-service__thirdcol
+                                    height: 200px
+                                    width: 200px
+                                    div
+                                        &:nth-of-type(1)
+                                            width: 200px
+                                            height: 60px
+                                            img
+                                                top: 30px
+                                                left: 50%
+                                                transform: translateX(-50%) scale(0.5)
+                                            p
+                                                top: 70px
+                                                text-transform: uppercase
+                                                text-align: center
+                                                left: 50%
+                                                transform: translateX(-50%)
+                                        &:nth-of-type(2)
+                                            width: 200px
+                                            img
+                                                &:nth-of-type(1)
+                                                    top: 10px
+                                                    left: 50%
+                                                    transform: translateX(-50%) scale(0.5)
+                                                    
+                                            p
+                                                &:nth-of-type(1)
+                                                    text-align: center
+                                                    text-transform: uppercase
+                                                    width: 200px
+                                                    top: 50px
+                                                    left: 50%
+                                                    transform: translateX(-50%)
+                                    
+                            &::before
+                                margin: 45px auto 0 auto
+                                left: 50%
+                                transform: translateX(-50%)
+                               
+                        &.art-service__title
+                            p
+                                position: absolute
+                                font-size: 18px
+                                top: 50%
+                                left: 60%
+                                transform: translate(-50%)
+                            img
+                                top: 50%
+                                left: 25%
+                                transform: scale(0.5) translate(-50%)
+                                position: absolute
+        &.news-feed
+            margin: 0 auto
+            div
+                &.news-feed__title
+                    height: 80px
+                    margin: 0 auto
+                    p
+                        position: absolute
+                        font-size: 18px
+                        top: 00%
+                        left: 60%
+                        transform: translate(-50%)
+                    img
+                        top: 00%
+                        left: 25%
+                        transform: scale(0.5) translate(-50%)
+                        position: absolute
+                &.news-feed__profile
+                    padding-top: 40px
+                    div
+                        &.news-feed__columnsfeed
+                            div
+                                &.news-feed__ikony
+                                    & >div
+                                        margin-top: 20px
+                                    div
+                                        
+                                        &.news-feed__poj
+                                            margin-right: 0 !important
+                                            height: 200px
+                                            img
+                                                width: 152px
+                                                height: 152px
+                                            div
+                                                &.op
+                                                    left: 50% 
+                                                    transform: translateX(-50%) 
+                                                    p
+                                                        text-align: center
+                                                        &:nth-child(4)
+                                                            display: none
+                    &::after
+                        content: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla reiciendis atque sint dignissimos! Id quae inventore incidunt nulla, modi fugit cumque alias natus suscipit eum, corrupti tempore et facilis hic Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. consectetur adipisicing elit  "
+                        text-align: center
+                        color: #023F5B
+                        font-size: 14px
+        &.contact-artc
+            div 
+                &.contact-artc__contentcontact 
+                    div 
+                        &.contact-artc__under420
+                            display: flex
+                            justify-content: space-between
+                            padding-right: 15px
+                            padding-left: 15px
+                            div
+                                flex-basis: 48%
+                                p
+                                    color: white
+                                    font-family: sans-serif
+                                    font-size: 15px
+                                    font-weight: 300
+                        &.contact-artc__title
+                            width: 220px
+                            height: 80px
+                            margin: 0 auto
+                            position: relative
+                            p
+                                position: absolute
+                                font-size: 18px
+                                top: 00%
+                                left: 60%
+                                transform: translate(-50%)
+                            img
+                                top: 00%
+                                left: 25%
+                                transform: scale(0.5) translate(-50%)
+                                position: absolute
+                        &.contact-artc__citiescontact 
+                            padding-top: 10px
+                            margin-bottom: 10px
+                            padding-right: 17px
+                            padding-left: 19px
+                            margin-top: 20px
+                            div
+                                &.slick-slide
+                                    height: 217px
+                                    &.contact-artc__two
+                                        p
+                                            padding-left: 0
+                                    &.contact-artc__three
+                                        p
+                                            padding-left: 0
+                                    p
+                                        text-align: center
+                                        font-size: 16px
+                            &::after
+                                bottom: 0
+                                width: 93%
+                            &::before
+                                width: 93%
+                                
+                           
+                            
+                        &.contact-artc__contactmedia
+                            display: none
+    footer 
+        &.mainfooter 
+            height: 87px
+            // width: 920px
+            margin: 0 auto
+            div 
+                &.mainfooter__contain 
+                    div 
+                        &.mainfooter__adsfooter 
+                            padding-top: 00px
+                            margin-top: 00px
+                            position: relative
+                            transition: 0.3s
+                            div
+                                &.slick-slide 
+                                    width: 100%
+                                    height: 87px
+                                    position: relative
+                            button
+                                &.slick-next
+                                    right: -40px
+                                &.slick-prev
+                                    left: -45px
+                    img 
+                        transform: scale(0.7)
+                        &.vision
+                            left: 50%
+                            transform: translateX(-50%) scale(0.7)
+                            top: 20%
+                        &.bell
+                            left: 50%
+                            transform: translateX(-50%) scale(0.7)
+                            top: 5%
+                        &.ernst
+                            left: 50%
+                            transform: translateX(-50%) scale(0.7)
+                            top: 15%
+                        &.minis
+                            left: 50%
+                            transform: translateX(-50%) scale(0.7)
+                            top: 5%
+                        &.tnt
+                            left: 50%
+                            transform: translateX(-50%) scale(0.7)
+                            top: 1%
+        
+                                    
+                                
+                        
+                        
+                        
+                        
+                        
+                                                        
+
+
+                
+                        
+                                        
+                            
+                            
+                        
+                        
+    
+
+
+   
+
+
+
+
+
+                    
+                    
+                       
+    
+            
+        
+            
+            
+                                        
+                                        
+        
+        
+
+    
+    
+
+    
